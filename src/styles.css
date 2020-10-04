@@ -1,0 +1,49 @@
+* {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #333;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #eee;
+}
+
+main {
+  position: relative;
+  padding: 2rem;
+  margin: 4rem auto;
+  max-width: 600px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #e34b3e;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#quote-box {
+  margin: 90px 0;
+  padding: 60px;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
