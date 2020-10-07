@@ -29,7 +29,7 @@ header img {
   margin-right: 10px;
 }
 
-button {
+#button {
   background-color: #e34b3e;
   color: white;
   outline: none;
@@ -39,10 +39,46 @@ button {
   font-size: 16px;
   width: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
 }
 
-#quote-box {
-  margin: 90px 0;
+#random-quote-box {
+  margin: 20px 0 90px;
+  padding: 60px;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#spinner {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#quote-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#quote-list li {
+  list-style-type: none;
+  margin: 20px 0;
   padding: 60px;
   background-color: white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
