@@ -4,50 +4,18 @@ const quoteList = document.getElementById("quote-list");
 
 const BASE_URL = "https://programming-quotes-api.herokuapp.com";
 
-const spinner = `<div id="spinner"></div>`;
+// 1. write function to get random quote
 
-function quoteComponent(quote, author) {
-  return `
-    <q class="quote">${quote}</q>
-    <br /><br />
-    <em class="author"> - ${author}</em>
-    `;
-}
+// 2. add event listener to display quote on button click
 
-async function getFromApi(url) {
-  try {
-    const response = await fetch(url);
-    const json = await response.json();
-    return json;
-  } catch (error) {
-    console.log(error);
-  }
-}
+// 3. create quote component to render component
 
-button.addEventListener("click", async function () {
-  try {
-    quoteBox.innerHTML = spinner;
-    const quote = await getFromApi(`${BASE_URL}/quotes/random/lang/en`);
-    quoteBox.innerHTML = quoteComponent(quote.en, quote.author);
-  } catch (error) {
-    console.log(error);
-  }
-});
+// 4. write function to get all quotes
 
-async function loadQuotesIntoList() {
-  try {
-    quoteList.innerHTML = spinner;
-    const quotes = await getFromApi(`${BASE_URL}/quotes`);
+// 5. write function to render quotes in to list
 
-    let htmlList = ``;
+// 6. add loading spinners
 
-    quotes.forEach((quote) => {
-      htmlList += `<li>${quoteComponent(quote.en, quote.author)}</li>`;
-    });
+// 7. abstract api calls
 
-    quoteList.innerHTML = htmlList;
-  } catch (error) {
-    console.log(error);
-  }
-}
-loadQuotesIntoList();
+// When your done try creating a modal that shows more information about the quote on click.
