@@ -8,7 +8,7 @@ const BASE_URL = "https://programming-quotes-api.herokuapp.com";
 
 // 2. add event listener to display quote on button click
 
-// 3. create quote component to render component
+// 3. create quote component to render data
 
 // 4. add loading spinners
 
