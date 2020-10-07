@@ -10,11 +10,11 @@ const BASE_URL = "https://programming-quotes-api.herokuapp.com";
 
 // 3. create quote component to render component
 
-// 4. write function to get all quotes
+// 4. add loading spinners
 
-// 5. write function to render quotes in to list
+// 5. write function to get all quotes
 
-// 6. add loading spinners
+// 6. write function to render quotes in to list
 
 // 7. abstract api calls
 
