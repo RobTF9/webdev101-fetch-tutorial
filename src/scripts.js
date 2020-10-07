@@ -39,13 +39,13 @@ async function loadQuotesIntoList() {
     quoteList.innerHTML = spinner;
     const quotes = await getFromApi(`${BASE_URL}/quotes`);
 
-    let htmlList = ``;
+    let html = ``;
 
     quotes.forEach((quote) => {
-      htmlList += `<li>${quoteComponent(quote.en, quote.author)}</li>`;
+      html += `<li>${quoteComponent(quote.en, quote.author)}</li>`;
     });
 
-    quoteList.innerHTML = htmlList;
+    quoteList.innerHTML = html;
   } catch (error) {
     console.log(error);
   }
